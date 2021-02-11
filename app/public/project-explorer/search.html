@@ -20,33 +20,29 @@
         <a href="createproject.html">Submit</a>
 
     </nav>
-    
     <h3>Search Project By</h3>
-    <input type="text"name="searchTerm"
-    placeholder="Project Name, Authors, Abstract,Tags"><br><br>
-    <label>Search By:</label><br>
-    <select>name="Search Type"><br>
-        <option value="Name">Name</option>
-        <option value="Abstacts">Abstarcts</option>
-        <option value="Authors">Authors</option>
-        <option value="Tags">Tags</option>
 
-    </select><br><br>
-
-    <input type="Submit"value="search">
-<h2>Search Result</h2>  
-
-<div>
-    <h4>Project 1</h4>
+    <form action="searchForm">
+        <input type="text"name="searchTerm"placeholder="Project Name, Authors, Abstract, Tags"><br><br>
+        <label>Search By:</label><br>
+        <select name="searchType">
+            <option value="Name">Name</option>
+            <option value="Author">Author</option>
+            <option value="Abstract">Abstract</option>
+            <option value="Tags">Tags</option>
+        </select><br><br>
+        <input type="Submit"value="search">
+    </form>
+    <h4>Search Result</h4>
+    <div>
+        <h5>Project 1</h5>
         <ul>
             <li>Name: Project 1</li>
-            <li>Description: Synchronous motor Implementation and Design</li>
-            <li>Program: Electrical Engineering</li>
-            <li>Authors: Chris Ufomadu,Ade Ojo</li>
-            <li>Tags: #GSW #W3C</li>
-            <li>Year: 2008</li>
+            <li>Description: Design and Implementation of synchronous motor</li>
+            <li>Author: Chris Ufomadu</li>
+            <li>Tags: #GSW, #W3C</li>
+            <li>Year: 2021</li>
         </ul>
-
-</div>
+    </div>
 
 </html>
