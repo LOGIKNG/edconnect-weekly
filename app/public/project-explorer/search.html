@@ -15,23 +15,23 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="search.html">Projects</a>
-        <a href="Login.html">Login</a>
+        <a href="login.html">Login</a>
         <a href="register.html">Register</a>
         <a href="createproject.html">Submit</a>
 
     </nav>
     <h3>Search Project By</h3>
 
-    <form action="searchForm">
+    <form name="searchForm">
         <input type="text"name="searchTerm"placeholder="Project Name, Authors, Abstract, Tags"><br><br>
-        <label>Search By:</label><br>
+        <label for="Search By">Search By:</label><br>
         <select name="searchType">
             <option value="Name">Name</option>
             <option value="Authors">Authors</option>
             <option value="Abstract">Abstract</option>
             <option value="Tags">Tags</option>
         </select><br><br>
-        <input type="Submit"value="search">
+        <input type="submit"value="Search">
     </form>
     <h4>Search Result</h4>
     <div>
@@ -40,9 +40,9 @@
             <li>Name: Project 1</li>
             <li>Description: Design and Implementation of synchronous motor</li>
             <li>Program: Computer Science</li>
-            <li>Author: Chris Ufomadu</li>
-            <li>Tags: #GSW, #W3C</li>
-            <li>Year: 2021</li>
+            <li>Author: John Doe, Jane Doe</li>
+            <li>Tags: #Asphyxia, #GSW</li>
+            <li>Year: 2018</li>
         </ul>
     </div>
 
