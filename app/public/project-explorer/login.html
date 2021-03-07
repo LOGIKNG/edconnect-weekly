@@ -5,43 +5,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Explorer</title>
+    <meta name="viewport" content="width"=device-width initial-scale="1">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
 
 </head>
 
 <body>
-    <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database For Academic Project</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="search.html">Projects</a>
-        <a href="Login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="createproject.html">Submit</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ml-3 mr-3">
+        <a class="navbar-brand" href="#">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" name="searchForm" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Submit</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="container mx-auto" style="width: 700px;"><br>
+      <h4 class="ml-3">Login</h4>
+      <div class="form-group">
+        <label for="inputEmailAddress" class="col-md-3 form-label">Email address</label>
+        <div class="col-md-9">
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword" class="col-md-3 form-label">Password</label>
+        <div class="col-md-9">
+          <input type="password" class="form-control" id="email" placeholder="Enter password" name="password">
+        </div>
+      </div>
+      <button type="Login" class="btn btn-primary ml-3">Login</button>
+    </div>
 
-    </nav>
+        <footer class="bg-light text-right text-md-start ml-5 mr-5">
+           <div class="text-right p-3 bg-light">
+            Project Explorer © 2020 Copyright.
+            <a class="text-dark" href="#">Edconnect</a>
+           </div>
+        </footer>
 
-    <main>
-        <h1>Login</h1>
-        <form>
-            <label>
-                email address:
-            </label>
-            
-            <input type="email" name="email"><br><br>
-
-            <label>password:</label>
-
-            <input type="password" name="password"><br><br>
-            <input type="submit">
-        </form>
-    
-    
-
-        
-    </main>
-
-
-    </header>
 </body>
 </html>

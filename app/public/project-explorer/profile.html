@@ -2,92 +2,140 @@
 
 <html lang="en">
     
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Project Explorer</title>
+    <meta name="viewport" content="width"=device-width initial-scale="1">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
 
-</head>
-
-<body>
-    <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database For Academic Project</h2>
-        </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="search.html">Projects</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="createproject.html">Submit</a>
-
-   </nav>><br><br>
-   <main>
-       <section>
-
-       <h2>John Doe</h2>
-    <p>john.doe@gmail.com</p>
-    <ul>
-        <li>Program: computer Science</li>
-        <li>Matric: 00/0000</li>
-        <li>Graduation Year: 2019</li>
-    </ul>
-       </section>
-       <section>
-    <h2>Update Profile</h2>
-
-    <form name="Update Profile">
-        <label for="First Name">First Name:</label>
-        <input type="text"name="firstName"></div><br><br>
-        <label for="Last Name">Last Name:</label>
-        <input type="text"name="lastName"></div><br><br>
-        <label for="Email Address">Email Address:</label>
-        <input type="email"name="email"></div><br><br>
-        <label for="Password">Password:</label>
-        <input type="password"name="password"></div><br><br>
-        <label for="Matric Number">Matric Number:</label>
-        <input type="text"name="matricNumber"></div><br><br>
-        <label for="Program">Program:</label>
-        <select name="program">
-            <option value="computer_science">Computer Science</option>
-            <option value="computer_information_systems">Computer Information Systems</option>
-            <option value="computer_technology">Computer Technology</option><br>
-        </option>
-        </select><br><br>
-        <label for="Graduation">Graduation Year:</label>
-        <select name="graduationYear">
-            <option value="2013">2013</option>
-            <option value="2014"></option>
-            <option value="2015"></option>
-            <option value="2016"></option>
-            <option value="2017"></option>
-            <option value="2018"></option>
-            <option value="2019"></option>
-            <option value="2020"></option>
-        </select><br><br>
-        <input type="submit">
-
-    </form>
-    </section>
-
-    <h2>Change Password</h2>
-    <form name="Change Password">
-        <label for="Current Password">Current Password:</label>
-        <input type="password"name="currentPassword"><br><br>
-        <label for="New password">New Password:</label>
-        <input type="password"name="newPassword"><br><br>
-        <label for="Confirm Password">Confirm Password:</label>
-        <input type="password"name="confirmPassword"><br><br>
-        <input type="submit">
-    </form>
-</section>
+  </head>
 
 
-
-
-        
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" name="searchForm" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Submit</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container p-3">
+        <strong>Ade Chuks</strong> ade@edconnect.ng
+        <div class="p-1 mb-2 bg-light text-dark">
+            <div class="row">
+                <div class=" col">
+                    Program
+                </div>
+                <div class="col">
+                    Matriculation Number
+                </div>
+                <div class="col">
+                    Graduation Year
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col">
+                    Computer Information System
+                </div>
+                <div class="col">
+                    33/3333
+                </div>
+                <div class="col">
+                    2018
+                </div>
+                </div>
+            </div>
+
+        <br><h6>Update Profile</h6>
+        <hr>
+        <form class="mx-auto" style="width:800px;">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputFirstName" class="form-label">First name</label>
+              <input type="First name" class="form-control" id="inputFirstName">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputLastName" class="form-label">Last name</label>
+              <input type="Last name" class="form-control" id="inputLastName">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmailAddress" class="form-label">Email address</label>
+              <input type="Email address" class="form-control" id="inputEmailAddress">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputProgram" class="form-label">Program</label>
+              <select id="inputProgram" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputMatriculationNumber" class="form-label">Matriculation number</label>
+              <input type="Matriculation number" class="form-control" id="inputMatriculationNumber">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputGraduationYear" class="form-label">Graduation year</label>
+              <select id="inputGraduationYear" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Update profile</button>
+        </form>
 
 
 
-</body>
+      <br><h6>Change password</h6>
+      <hr>
+      <form class="mx-auto" style="width:800px;">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputCurrentPassword" class="form-label">Current password</label>
+            <input type="current password" class="form-control" placeholder="Current Password">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inpuNewPassword" class="form-label">New password</label>
+            <input type="Last name" class="form-control" placeholder="Your new password">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputConfirmPassword" class="form-label">Confirm password</label>
+            <input type="Last name" class="form-control" placeholder="Confirm password">
+          </div>
+        </div>
+      </form>
+      <p><footer class="bg-light text-right text-md-start">
+        <div class="text-right p-3 bg-light>
+         Project Explorer © 2020 Copyright.
+          <a class="text-dark" href="#">Edconnect</a>
+        </div>
+      </footer></p
+
+  </body>
 </html>
