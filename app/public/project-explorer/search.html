@@ -42,32 +42,35 @@
         </div>
       </nav><br>
 
-    <div class="container">
+    <div class="col-md-6">
       <h4>Project Gallery</h4>
-        <div class="form-row align-items-center p-3 border bg-light">
+    </div>
+        <form name="searchForm">
+          <div class="form-row mx-5 bg-light p-3 border">
             <div class="col-md-6">
               <div class="form-group">
                 <label for="inputSearch" class="form-label"></label>
-                <input type="text" class="form-control" class="form-control-lg" placeholder="Search project name, author, abstracts, tags">
+                <input type="text" class="form-control" class="form-control-lg" name="searchTerm" placeholder="Search project name, author, abstracts, tags">
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="inputName" class="form-label">Name</label>
-                <div class="input-group mb-4">
+                <label for="inputName" class="form-label"></label>
+                <div class="input-group mb-3">
                     <div class="input-group-text">Search by
                     </div>
-                    <select id="enable" class="form-control" class="form-control-lg">
+                    <select name="enable" class="form-control" class="form-control-lg">
                       <option>Name</option>
                     </select>
                 </div>
               </div>
             </div>
             <div class="col-md-2">
-              <button type="submit" class="btn btn-primary mt-2" class="btn btn-lg">Submit</button>
+              <button type="submit" class="btn btn-primary mt-4" class="btn btn-lg">Submit</button>
             </div>
-        </div><br>
-        <div class="card-deck" style="width: 600px;">
+          </div>
+        </form>
+        <div class="card-deck mx-5 pt-3" style="width: 800px;">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Project Title</h5>
