@@ -41,56 +41,57 @@
           </ul>
         </div>
       </nav><br>
-
-    <div class="col-md-6">
-      <h4>Project Gallery</h4>
-    </div>
-        <form name="searchForm">
-          <div class="form-row mx-5 bg-light p-3 border">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="inputSearch" class="form-label"></label>
-                <input type="text" class="form-control" class="form-control-lg" name="searchTerm" placeholder="Search project name, author, abstracts, tags">
+      <h3 class="mx-auto w-75">Project Gallery</h3>
+        <div class="mx-auto w-75 p-3 bg-light">
+          <form name="searchForm">
+            <div class="form-row d-flex align-items-center">
+              <div class="form-group col-md-8">
+                <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label for="inputName" class="form-label"></label>
-                <div class="input-group mb-3">
-                    <div class="input-group-text">Search by
-                    </div>
-                    <select name="enable" class="form-control" class="form-control-lg">
-                      <option>Name</option>
+              <div class="form-group col-md-3">
+                <div class="input-group">
+                  <div class="input-group-text">search by</div>
+                    <select class="col-form-control form-control-lg" name="searchType">
+                      <option value="name">Name</option>
+                      <option value="abstract">Abstract</option>
+                      <option value="authors">Authors</option>
+                      <option value="tags">Tags</option><br>
                     </select>
                 </div>
               </div>
+              <div class="form-group col-md-1">
+                <button type="submit" class="btn btn-primary btn-lg" value="submit">Submit</button>
+              </div>
             </div>
-            <div class="col-md-2">
-              <button type="submit" class="btn btn-primary mt-4" class="btn btn-lg">Submit</button>
+          </form>
+        </div>
+
+      <p class="mx-auto w-75 pt-3">All Projects(0 results)</p>
+      <div class="row mx-auto w-75">
+        <div class="col-md-6">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Project Title</h5>
+                <h6 class="card-subtitle">Author 1, Author 2</h6>
+                <p class="card-text">some quick example text to build on the card title and make up the bulk of the card content</p>
+                <a href="#" class="card-link">#html</a>
+                <a href="#" class="card-link">#css</a>
+                <a href="#" class="card-link">#javascript</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Project title</h5>
+                <h6 class="card-subtitle">Author 1, Author 2</h6>
+                <p class="card-text">some quick example text to build on the card title and make up the bulk of the card content</p>
+                <a href="#" class="card-link">#html</a>
+                <a href="#" class="card-link">#css</a>
+                <a href="#" class="card-link">#javascript</a>
+              </div>
             </div>
           </div>
-        </form>
-        <div class="card-deck mx-5 pt-3" style="width: 800px;">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Project Title</h5>
-              <h6 class="card-subtitle">Author 1, Author 2</h6>
-              <p class="card-text">some quick example text to build on the card title and make up the bulk of the card content</p>
-              <a href="#" class="card-link">#html</a>
-              <a href="#" class="card-link">#css</a>
-              <a href="#" class="card-link">#javascript</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <h6 class="card-subtitle">Author 1, Author 2</h6>
-              <p class="card-text">some quick example text to build on the card title and make up the bulk of the card content</p>
-              <a href="#" class="card-link">#html</a>
-              <a href="#" class="card-link">#css</a>
-              <a href="#" class="card-link">#javascript</a>
-            </div>
-          </div>
+        </div>
       </div>
      <p><footer class="bg-light text-right text-md-start ml-2 mr-2">
         <div class="text-right p-3 bg-light">
@@ -99,7 +100,7 @@
         </div>
       </footer></p> 
 
-      </div>
+    </div>
 
 </body>
 
