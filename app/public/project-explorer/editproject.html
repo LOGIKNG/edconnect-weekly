@@ -58,54 +58,57 @@
             </div>
           </div>
 
-      <br><div class="row row-2">
-          <div class="col-6">
-            Edit Project<hr>
-            <div class="form-group">
-              <label for="inputSearchProject" class="col-md-6 form-label">Project name</label>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="project 1">
-            </div>
-            </div>
-            <div class="form-group">
-              <label for="inputSearchTextarea" class="col-md-6 form-label">Project abstract</label>
-            <div class="col-md-6">
-              <textarea class="form-control rounded-0" input type="text" placeholder="project 1 is a very interesting"id="inputSearchTextarea" rows="3"></textarea>
-            </div>
-            </div>
-            <div class="form-group">
-              <label for="inputSearchProject" class="col-md-6 form-label">Authors</label>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Ade Chris">
-            </div>
-            </div>
-            <div class="form-group">
-              <label for="inputSearchProject" class="col-md-6 form-label">Tags</label>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="#web">
-            </div>
-            </div>
-            <button type="submit" class="btn btn-primary ml-3">save</button><br><br>
-          </div>
-          <div class="col-6">
-            Manage Project files<hr>
-            <div class="form-group">
-              <div class="custom-file">
-                <label class="custom-file-label" for="customFile" class="col-md-6 form-label">Click to open file browser</label>
-              <div class="col-md-6">
-                <input type="file" class="custom-file-input" id="customFile">
-            </div>
-            <hr>
-            <div class="card">
-              <div class="card-header">Project files</div>
-              <div class="card-body">
-                <p class="card-text">No files uploaded yet.</p>
+      <br><form>
+            <div class="row row-2">
+              <div class="col-6">
+                Edit Project<hr>
+                <div class="form-group">
+                  <label for="inputSearchProject" class="col-md-6 form-label">Project name</label>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control"  name="projectName" placeholder="project 1">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputSearchTextarea" class="col-md-6 form-label">Project abstract</label>
+                  <div class="col-md-6">
+                    <textarea class="form-control rounded-0" input type="text" name="projectAbstract" placeholder="project 1 is a very interesting"id="inputSearchTextarea" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputSearchProject" class="col-md-6 form-label">Authors</label>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="authors" placeholder="Ade Chris">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputSearchProject" class="col-md-6 form-label">Tags</label>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="tags" placeholder="#web">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary ml-3">save</button><br><br>
+              </div>
+              <div class="col-6">
+                Manage Project files<hr>
+                <div class="form-group">
+                  <div class="custom-file">
+                    <label class="custom-file-label" for="customFile" class="col-md-6 form-label">Click to open file browser</label>
+                    <div class="col-md-6">
+                      <input type="file" class="custom-file-input" id="customFile">
+                    </div>
+                    <hr>
+                    <div class="card">
+                      <div class="card-header">Project files</div>
+                        <div class="card-body">
+                          <p class="card-text">No files uploaded yet.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-            </div>
-          </div>
-          </div>
+          </form>
   <footer class="bg-light text-right text-md-start ml-2 mr-2">
       <div class="text-right p-3 bg-light">
        Project Explorer © 2020 Copyright.
